@@ -1,0 +1,11 @@
+
+#Feign配置文件配置日志
+feign:
+  client:
+    config:
+      defalit:
+        logger-level: basic
+  httpclient:     #配置连接池
+    enabled: true   #开启feign对HttpClient的支持
+    max-connections: 200    #最大连接数
+    max-connections-per-route: 50   #每个路径的最大连接数
